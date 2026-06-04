@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <title>手动翻译 / 划词翻译</title>
+  <g stroke="#2B261F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M8 24l3-10 11-7 3 4-10 8-7 5z"/>
+    <path d="M19 8l4 5"/>
+    <path d="M8 24l5-1"/>
+
+  </g>
+</svg>

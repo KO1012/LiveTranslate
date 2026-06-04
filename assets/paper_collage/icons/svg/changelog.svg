@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <title>Changelog</title>
+  <g stroke="#2B261F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M9 5h11l3 3v19H9z"/>
+    <path d="M20 5v5h4"/>
+    <path d="M12 14h8M12 18h8M12 22h5"/>
+
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+# Project metadata + tooling configuration for LiveTranslate.
+#
+# Runtime dependencies are intentionally kept in the requirements-*.txt files
+# (core / local / full) because the install flow is split by capability and
+# PyTorch is installed separately with a CUDA-specific index URL. This file
+# codifies the lint configuration that previously only lived in CLAUDE.md.
+
+[project]
+name = "livetranslate"
+version = "0.1.0"
+description = "Real-time system-audio translation with a transparent subtitle overlay (Windows)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.ruff]
+# Long lines are common in QSS strings and signal wiring; don't fight them.
+line-length = 120
+target-version = "py310"
+# funasr_nano/ is vendored third-party code; don't lint or reformat it.
+# _*.py are local scratch/probe files (not part of the app); skip them.
+extend-exclude = ["funasr_nano", "_*.py"]
+
+[tool.ruff.lint]
+# Mirrors the documented command:
+#   ruff check --select F,E,W --ignore E501,E402
+# E501 (line length) is handled by line-length above and otherwise ignored.
+# E402 (module import not at top) is intentional: torch must be imported
+# before PyQt6 on Windows (see main.py and pytorch#166628).
+select = ["F", "E", "W"]
+ignore = ["E501", "E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

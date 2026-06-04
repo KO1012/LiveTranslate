@@ -1,0 +1,42 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.pytest_cache/
+.ruff_cache/
+models/
+logs/
+transcripts/
+user_settings.json
+.env
+.env.*
+!.env.example
+
+# Runtime data / diagnostics
+data/
+self_check/
+screenshot/*.png
+!screenshot/en.png
+!screenshot/zh.png
+*.db
+*.sqlite
+*.sqlite3
+*.log
+diag.zip
+
+# IDE
+.kiro/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Distribution
+dist/
+build/
+*.egg-info/

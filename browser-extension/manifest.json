@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "LiveTranslate Selection",
+  "version": "0.1.0",
+  "description": "Send selected text to the local LiveTranslate client.",
+  "permissions": ["contextMenus", "storage", "activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:17891/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "LiveTranslate",
+    "default_popup": "popup.html"
+  }
+}

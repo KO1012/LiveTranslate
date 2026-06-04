@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <title>字幕窗口</title>
+  <g stroke="#2B261F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+
+    <rect x="6" y="8" width="20" height="15" rx="2"/>
+    <path d="M10 13h12M10 18h8"/>
+    <path d="M12 5h8"/>
+
+  </g>
+</svg>

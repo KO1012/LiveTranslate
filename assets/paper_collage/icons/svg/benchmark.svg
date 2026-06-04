@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <title>Benchmark</title>
+  <g stroke="#2B261F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+
+    <path d="M6 25h20"/>
+    <path d="M9 22v-6M16 22v-11M23 22v-15"/>
+    <path d="M8 12l5-3 5 2 5-6"/>
+
+  </g>
+</svg>
