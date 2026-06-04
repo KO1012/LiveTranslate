@@ -1,0 +1,499 @@
+# LiveTranslate ja UI strings
+# Generated from English strings; review native phrasing before release.
+
+export_filter: Text Files (*.txt);;SRT Subtitles (*.srt);;Markdown Files (*.md);;All Files (*)
+translating: を翻訳中...
+same_language: (同じ言語)
+overlay_title: 字幕
+subtitle_chip_original: ソース
+subtitle_chip_translation: 翻訳
+overlay_waiting_sound: '音を待っています…
+
+  ビデオまたは会議の音声を再生すると、ここにライブで字幕が表示されます。'
+copy_original: オリジナルをコピー
+copy_translation: 翻訳をコピー
+copy_all: すべてコピー
+export_menu: ファイルにエクスポート
+export_original: オリジナルをエクスポート
+export_translation: 翻訳のエクスポート
+export_all: 原本と翻訳をエクスポート
+export_dialog_title: 字幕のエクスポート
+export_empty: エクスポートするものがありません
+export_failed: 'エクスポートに失敗しました:
+
+  {error}'
+paused: 停止
+running: 実行
+clear: クリア
+clear_list: 翻訳リストのクリア
+settings: 設定
+subtitle: サブ
+quit: 終了
+tts_toggle: 話す
+tts_toggle_tip: '同時通訳の切り替え: 翻訳を読み上げます ([設定] → [音声/通訳] で音声とプロファイルを設定します)'
+click_through: クリックスルー
+top_most: 最上位
+auto_scroll: 自動スクロール
+taskbar: タスクバー
+model_label: 'モデル:'
+target_label: 'ターゲット:'
+source_label: '出典:'
+overlay_opacity: 不透明度
+window_control_panel: LiveTranslate - コントロール パネル
+tab_vad_asr: VAD / ASR
+tab_translation: 翻訳
+tab_benchmark: ベンチマーク
+tab_cache: キャッシュ
+tab_style: スタイル
+tab_subtitle: サブタイトル
+tab_history: 履歴
+group_preset: プリセット
+preset_default: デフォルト (ハイコントラスト)
+preset_transparent: 透明
+preset_compact: コンパクト
+preset_light: ライト
+preset_dracula: ドラキュラ
+preset_nord: ノルド
+preset_monokai: モノカイ
+preset_solarized: ソラライズドダーク
+preset_gruvbox: Gruvbox ダーク
+preset_tokyo_night: 東京の夜
+preset_catppuccin: キャットプッチン モカ
+preset_one_dark: ワンダーク
+preset_everforest: エバーフォレスト
+preset_kanagawa: 神奈川県
+preset_paper_dark: ペーパーダーク
+preset_custom: カスタム
+btn_reset_style: デフォルトにリセット
+btn_reset_positions: ウィンドウの位置をリセット
+label_asr_api_base: 'ASR API Base:'
+group_background: 背景
+label_bg_color: 'コンテナの色:'
+label_bg_opacity: 'コンテナの不透明度:'
+label_header_color: 'ヘッダーの色:'
+label_header_opacity: 'ヘッダーの不透明度:'
+label_border_radius: '境界線の半径:'
+group_text: テキスト
+label_original_font: 'オリジナルのフォント:'
+label_original_font_size: '元のフォント サイズ:'
+label_original_color: '元の色:'
+label_translation_font: '翻訳フォント:'
+label_translation_font_size: '翻訳フォント サイズ:'
+label_translation_color: '翻訳色:'
+label_timestamp_color: 'タイムスタンプの色:'
+group_window: ウィンドウ
+label_window_opacity: 'ウィンドウの不透明度:'
+group_asr_engine: ASR エンジン
+group_asr_api: オーディオ API ASR
+label_asr_api_key: 'ASR API キー:'
+label_asr_api_model: 'ASR モデル:'
+label_asr_api_timeout: 'ASR タイムアウト:'
+label_engine: 'エンジン:'
+label_language_hint: '言語のヒント:'
+asr_lang_auto: 自動検出
+label_device: 'デバイス:'
+label_audio: 'オーディオ:'
+label_hub: 'ハブ:'
+hw_detecting: ハードウェアを検出しています…
+hw_detected_gpu: 'GPU が検出されました: {name} ({vram}GB VRAM) · RAM {ram}GB'
+hw_detected_cpu: 使用可能な GPU が検出されません · RAM {ram}GB (CPU を使用します)
+hw_reason_gpu_high: 豊富な VRAM — 高精度エンジンを推奨 (Whisperlarge-v3 / SenseVoice)。
+hw_reason_gpu_mid: 中程度の VRAM — バランスの取れたセットアップを推奨します (Whisper Medium / SenseVoice)。
+hw_reason_gpu_low: VRAM に制限があります — 軽量セットアップを推奨します (Whisper small / SenseVoice)。
+hw_reason_cpu: GPU はありませんが、十分な RAM — ローカルの SenseVoice を推奨します (CPU で実行、中程度の速度)。
+hw_reason_lowend: ローエンド ハードウェア — クラウド API を推奨します (大規模なダウンロードがなく、リソースが最も軽い)。
+hw_recommend_btn: 適用を推奨
+hw_recommended_applied: 推奨設定が適用されました
+hw_whisper_vram_warn: ⚠ この GPU には ~{vram}GB VRAM が搭載されています。 Whisper {size} は適合しない可能性があります。小さいサイズを検討してください。
+label_mic: 'マイク:'
+audio_disabled: 無効 (マイクのみ)
+mic_disabled: 無効
+system_default: システムのデフォルト
+hub_modelscope: モデルスコープ (中国)
+hub_huggingface: ハギングフェイス (国際)
+label_ui_lang: '言語:'
+group_vad_mode: VAD モード
+vad_silero: シレロ VAD
+vad_energy: エネルギーベース
+vad_disabled: 無効 (常に送信)
+group_silero_threshold: Silero VAD しきい値
+label_threshold: 'しきい値:'
+group_energy_threshold: エネルギーしきい値 (エネルギーベース モード用)
+group_timing: タイミング
+label_min_speech: '最小スピーチ:'
+label_max_speech: '最大音声:'
+label_silence: '沈黙:'
+label_silence_dur: '次の時間は沈黙します:'
+label_incremental_asr: 'インクリメンタル ASR:'
+incremental_asr_tooltip: 連続発話中に定期的に完成文を自動出力
+label_interim_interval: '中間間隔:'
+silence_auto: 自動
+silence_fixed: 修正されました
+group_active_model: アクティブ モデル (パイプラインで使用)
+btn_apply: 適用する
+group_model_configs: モデル構成
+btn_add: 追加
+btn_edit: 編集
+btn_duplicate: 重複
+btn_remove: 削除
+history_filter: タイプ
+history_enabled: 履歴の保存
+history_filter_all: すべて
+history_filter_subtitle: 字幕
+history_filter_selection: 選択
+history_filter_hotkey: ホットキーの選択
+history_filter_extension: ブラウザ拡張機能
+history_filter_manual: マニュアル
+history_refresh: リフレッシュ
+history_export_session: エクスポート セッション
+history_delete_selected: 選択したものを削除
+history_clear_all: すべてクリア
+history_time: 時間
+history_type: タイプ
+history_original: オリジナル
+history_translation: 翻訳
+history_model: モデル
+history_explanation: 説明
+history_polished: ポリッシュ
+history_select_first: 最初に履歴レコードを選択してください
+history_empty_title: まだレコードがありません
+history_empty_desc: 最初の翻訳の後、ここで新しい知識が増えます。
+history_delete_confirm: 選択した履歴レコードを削除しますか?
+history_export_subtitle_only: セッション全体をエクスポートするには、字幕履歴レコードを選択してください
+history_clear_confirm: すべての履歴レコードをクリアしますか?これを元に戻すことはできません。
+group_system_prompt: システム プロンプト ({source_lang} {target_lang} をサポート)
+label_prompt_preset: 'プリセット:'
+prompt_daily: 毎日のチャット
+prompt_esports: eスポーツ
+prompt_anime: アニメ/映画
+prompt_custom: カスタム
+btn_restore_default: デフォルトに戻す
+btn_apply_prompt: プロンプトを適用
+btn_test_connection: テスト接続
+test_conn_running: テスト中...
+test_conn_no_model: モデルが選択されていません
+group_glossary: '用語集 (1 行に 1 つ: 用語 => 翻訳)'
+glossary_hint: 'ソース テキストに出現する用語は、正確な表現で翻訳されます。例: 三笠 => 三笠'
+group_timeout: モデル接続タイムアウト
+group_network: ネットワーク
+label_timeout: モデル接続タイムアウト
+group_hotkey: 選択変換ホットキー
+label_hotkey_enabled: グローバル ホットキーを有効にする
+label_hotkey_shortcut: 'ショートカット:'
+group_manual_translate: 手動テキスト翻訳
+manual_input_label: 入力
+manual_input_placeholder: 翻訳するテキストを貼り付けるか入力します
+manual_mode_label: 'モード:'
+manual_mode_literal: リテラル
+manual_mode_natural: ナチュラル
+manual_mode_explain: 学習の説明
+manual_mode_polish: ポーランド語
+manual_translate: 翻訳
+manual_copy_translation: 翻訳をコピー
+manual_empty: 翻訳するテキストを入力してください
+manual_translating: 翻訳中...
+sel_dialog_title: AI翻訳＆解説
+sel_loading: 翻訳中...
+sel_error: リクエストが失敗しました
+sel_done: 完了
+tab_audio_translate: 音声翻訳
+audio_translate_title: 録音をアップロードして翻訳する
+audio_translate_desc: 音声ファイルとターゲット言語を選択して、文字起こしし、自動的に翻訳します。認識には、クイック スタートで構成された ASR が使用されます。翻訳では現在選択されているモデルが使用されます。
+audio_translate_file_label: '録音:'
+audio_translate_choose: ファイルを選択してください…
+audio_translate_no_file: ファイルが選択されていません
+audio_translate_target_label: 'ターゲット言語:'
+audio_translate_start: 文字起こしと翻訳
+audio_translate_cancel: キャンセル
+audio_translate_copy: 翻訳をコピー
+audio_translate_export: 結果をエクスポートします…
+audio_translate_file_filter: Audio files (*.wav *.mp3 *.flac *.ogg *.opus *.m4a *.aac *.wma *.aiff);;All files (*)
+audio_translate_pick_first: 最初に録画を選択してください
+audio_translate_decoding: オーディオをデコードしています…
+audio_translate_transcribing: 文字起こし中 ({done}/{total})…
+audio_translate_translating: ({done}/{total}) を翻訳中…
+audio_translate_no_asr: ASR エンジンの準備ができていません。最初にクイックスタートで音声認識を設定します。
+audio_translate_no_model: 変換モデルが構成されていません。まず、クイックスタートで翻訳サービスを設定します。
+audio_translate_empty_result: 音声コンテンツが認識されませんでした。
+audio_translate_failed: '処理が失敗しました:
+
+  {error}'
+audio_translate_done: 完了しました。 {count} セグメント。
+audio_translate_cancelled: キャンセルされました。
+audio_translate_col_time: 時間
+audio_translate_col_original: オリジナル
+audio_translate_col_translation: 翻訳
+label_source: '出典:'
+btn_test_all: すべてのモデルをテストする
+testing: テスト中...
+mem_warning_msg: メモリ使用量 {rss}MB がしきい値を超えています。 LiveTranslate を再起動して、蓄積された ASR エンジン キャッシュを解放します。
+group_transcript: トランスクリプトの永続化
+label_auto_save_transcript: 認識出力をトランスクリプト/フォルダーに自動保存
+auto_save_transcript_tooltip: セッションごとに 3 つのファイル (オリジナル/翻訳/すべて) を作成し、リアルタイムで追加します。 50 メッセージ オーバーレイの上限には制限されません。
+btn_open_transcripts: トランスクリプトフォルダーを開く
+group_download_whisper: ウィスパーモデルのダウンロード
+btn_download_whisper: ダウンロード
+whisper_already_cached: すでにキャッシュされています
+btn_open_folder: モデルフォルダーを開く
+btn_delete_all_exit: すべて削除&& 終了
+scanning: スキャン中...
+no_cached_models: キャッシュされたモデルが見つかりません
+cache_empty_title: モデル ファイルはここに存在します
+cache_empty_desc: ダウンロードが完了したら、ここでキャッシュを表示、クリーンアップ、管理できます。
+cache_total: '合計: {size} ({count} アイテム)'
+dialog_delete_title: すべてのモデルを削除して終了
+dialog_delete_msg: 'これにより、すべての {count} キャッシュされたモデル ({size}) が削除され、アプリケーションが終了します。
+
+  設定は保存されます。必要なモデルは次回の起動時に再ダウンロードされます。
+
+  続く？'
+window_setup: LiveTranslate - 初期セットアップ
+group_download_source: モデルのダウンロード ソース
+group_model_source_optional: ローカル モデル ソース (オプション)
+group_cache_path: モデル キャッシュ フォルダー
+hub_modelscope_full: モデルスコープ (中国)
+hub_huggingface_full: ハギングフェイス (インターナショナル)
+btn_browse: 参照...
+label_api_base: 'API Base:'
+btn_continue: 続行
+btn_start_download: ダウンロードの開始
+btn_retry: 再試行
+download_failed: 'ダウンロードに失敗しました: {error}'
+download_complete: ダウンロードが完了しました。
+setup_api_hint: 'モデルをダウンロードしました!次に、翻訳 API を構成します。
+
+
+  APIベースURL、APIキー、モデル名が必要です。
+
+  DeepSeek をお勧めします (手頃な価格で効果的)。'
+setup_api_title: 翻訳 API の構成
+window_download: LiveTranslate - モデルのダウンロード
+downloading_models: '必要なモデルをダウンロードしています: {names}'
+btn_close: 閉じる
+dialog_edit_model: モデルの編集
+dialog_add_model: モデルの追加
+label_display_name: '表示名:'
+label_api_key: 'API キー:'
+label_model: 'モデル:'
+label_proxy: 'プロキシ:'
+label_proxy_url: 'プロキシ URL:'
+proxy_none: プロキシなし
+proxy_system: システム プロキシ
+proxy_custom: カスタム プロキシ
+json_response: Structured Output (JSON mode)
+json_response_hint: Requests the API to return results in JSON format, reducing extraneous text. Requires API support for
+  json_object mode.
+no_system_role: システム ロールなし (ユーザー メッセージにマージ)
+no_system_role_hint: API がシステム メッセージ (Qwen-MT など) を拒否する場合に有効にします。システム プロンプトはユーザー メッセージにマージされます。
+no_think: 思考を無効にする (思考モデルの推論をスキップ)
+no_think_hint: Qwen3 および同様の思考モデルに有効です。 Enable_ Thinking=false により、トークンの使用量と遅延を削減します。
+streaming: ストリーミング (増分出力)
+streaming_hint: 有効にすると、翻訳結果が段階的に返され、待ち時間が短縮されます。無効にすると、完全な結果を待ちます。
+label_context_turns: 'コンテキスト:'
+context_turns_hint: 用語の一貫性と参照解決を向上させるために、最後の N 個の翻訳ペアをコンテキストとして含めます。 0 = コンテキストなし。
+label_local_api_token: 'ローカル API トークン:'
+local_api_token_placeholder: オプション。拡張機能は同じトークンを使用する必要があります
+changelog_title: 新機能 - {version}
+asr_fast: 速い
+asr_accurate: 正確
+error_repetition: 繰り返しループが検出されました。モデル設定で構造化出力を無効にすることを検討してください。
+error_tl_network: 変換に失敗しました · 接続がありません
+error_tl_timeout: 変換失敗 · タイムアウト
+error_tl_auth: 変換に失敗しました · API キー
+error_tl_ratelimit: 変換に失敗しました · クォータ/レート制限
+error_tl_server: 変換に失敗しました · サーバー エラー
+error_tl_generic: 翻訳に失敗しました
+label_extra_body: extra_body (JSON)
+extra_body_hint: JSON object of provider-specific parameters merged into request extra_body (e.g. thinking_budget / reasoning_effort)
+extra_body_invalid: extra_body must be a valid JSON object
+tab_changelog: 変更ログ
+label_pricing: '価格:'
+label_input_price: 入力
+label_output_price: 出力
+price_suffix: /1Mトク
+label_advanced_params: 高度なパラメータ
+label_temperature: 温度
+label_top_p: トップ P
+label_max_tokens: 最大トークン数
+label_frequency_penalty: 周波数ペナルティ
+label_presence_penalty: プレゼンスペナルティ
+label_seed: シード
+override_enable: オーバーライド
+override_hint: チェックを外すと、サーバーのデフォルトまたはグローバル構成が使用されます。
+loading_model: '{name} を読み込み中...
+
+  お待ちください。'
+error_title: エラー
+error_load_asr: 'ASR モデルのロードに失敗しました:
+
+  {error}'
+error_asr_status: 'ASR が失敗しました: {error}'
+error_asr_not_ready: ASR の準備ができていません
+window_log: LiveTranslate - ログ
+show_debug: デバッグを表示
+tray_tooltip: LiveTranslate - リアルタイム翻訳
+tray_start: 開始
+tray_stop: 停止
+tray_pause: 一時停止
+tray_resume: 再開
+tray_show_overlay: オーバーレイを表示
+tray_hide_overlay: オーバーレイを非表示にする
+hide: 隠す
+hide_tray_hint: オーバーレイが非表示になりました。トレイ アイコンを右クリックすると、トレイ アイコンが再度表示されます。
+tray_show_log: ログを表示
+tray_show_panel: 設定を表示
+tray_tts: 音声翻訳 (TTS)
+tray_menu_overlay: オーバーレイ
+tray_menu_model: モデル
+tray_menu_target_lang: ターゲット言語
+tray_menu_asr_lang: 言語のヒント
+tray_more_langs: 詳細...
+mode_full: シンプル
+mode_compact: 詳細
+mode_toggle_tip: シンプル/詳細ビューの切り替え
+subwin_mode: 字幕モード
+subwin_settings: 字幕設定
+subwin_show: 字幕ウィンドウ
+subwin_hide: 字幕ウィンドウ
+subwin_basic: 基本
+subwin_sentences: '文:'
+subwin_window_width: 'ウィンドウの幅:'
+subwin_background: 背景
+subwin_bg_color: '色:'
+subwin_bg_opacity: '不透明度:'
+subwin_text_lines: テキスト行
+subwin_original: オリジナル
+subwin_translation: 翻訳
+subwin_font: 'フォント:'
+subwin_font_size: 'フォント サイズ:'
+subwin_color: '色:'
+subwin_opacity: '不透明度:'
+subwin_outline: 概要
+subwin_outline_color: '輪郭の色:'
+subwin_outline_width: 'アウトラインの幅:'
+subwin_align: '整列:'
+subwin_align_left: 左
+subwin_align_center: センター
+subwin_align_right: そうですね
+subwin_add_line: + 行を追加
+subwin_remove_line: 削除
+subwin_enabled: 有効
+subwin_line_spacing: '行間隔:'
+subwin_hint: '中クリックしてドラッグ |編集モード: 左クリックしてドラッグし、隅でサイズを変更し、ダブルクリックして終了します'
+subwin_edit_mode: 編集モード
+subwin_edit_line: テキスト行の編集
+subwin_line_type: タイプ
+subwin_cancel: キャンセル
+subwin_help: ヘルプ
+subwin_reset: リセット
+subwin_drag_hint: 字幕ウィンドウが表示されます。中クリックしてドラッグします。
+subwin_reset_confirm: すべての字幕設定をデフォルトにリセットしますか?
+subwin_border_radius: 境界線の半径
+subwin_bg_image: '背景画像:'
+subwin_bg_image_select: 選択...
+subwin_bg_image_clear: クリア
+subwin_move_up: ▲
+subwin_move_down: ▼
+subwin_target_lang: '言語:'
+subwin_animation: アニメーション
+subwin_auto_hide: '自動非表示:'
+subwin_auto_hide_sec: 秒 (0=オフ)
+subwin_hide_animation: 'アニメーションを非表示:'
+subwin_hide_duration: '期間:'
+subwin_entry_anim: 'エントリ:'
+subwin_exit_anim: '終了:'
+subwin_anim_duration: '期間:'
+subwin_anim_none: なし
+subwin_anim_fade: フェード
+subwin_anim_slide_left: 左にスライド
+subwin_anim_slide_right: 右にスライド
+subwin_anim_slide_up: スライドアップ
+subwin_anim_slide_down: スライドダウン
+tab_diagnostics: 診断
+tts_engine_openai: OpenAI-compatible /audio/speech
+diagnostics_desc: トラブルシューティングのために編集された診断バンドルをエクスポートします。これには、環境の概要、編集された構成、編集されたユーザー設定、および最近のログが含まれます。
+diagnostics_privacy_hint: バンドルには、history.db、トランスクリプト、完全な API キーは含まれません。共有する前に zip を確認してください。
+btn_export_diagnostics: 診断のエクスポート
+diagnostics_save_title: 診断バンドルの保存
+diagnostics_exported: '診断バンドルがエクスポートされました:
+
+  {path}'
+diagnostics_failed: '診断をエクスポートできませんでした:
+
+  {error}'
+tab_tts: TTS / 音声
+tts_intro: 同時通訳するには、翻訳を声に出して話してください。 Edge TTS は無料で、API キーは必要ありません。音声を会議アプリにフィードするには、仮想オーディオ ケーブルをインストールし、それを出力デバイスとして選択します。
+group_tts_enable: テキスト読み上げ
+label_tts_enabled: 翻訳を声に出して話す（同時通訳）
+label_tts_engine: 'エンジン:'
+tts_engine_edge: エッジ TTS (無料、キーなし)
+tts_engine_azure: Azure 音声サービス
+tts_engine_elevenlabs: イレブンラボ
+label_tts_voice: '音声:'
+tts_voice_placeholder: 空 = ターゲット言語による自動
+label_tts_volume: 'ボリューム:'
+label_tts_output: '出力デバイス:'
+btn_tts_test: テスト音声
+tts_testing: 合成中...
+label_tts_api_base: 'API Base:'
+tts_test_ok: 再生OK
+tts_test_empty: 音声が生成されません
+tts_sample_text: 同時通訳の音声テストです。
+group_tts_edge: エッジ TTS オプション
+label_tts_rate: '発話速度:'
+group_tts_openai: 音声 API オプション
+label_tts_api_key: 'API キー:'
+label_tts_region: '地域:'
+label_tts_model: 'モデル:'
+label_tts_speed: '速度:'
+home_hero_title: 声をつなぎ、世界を理解する
+home_hero_subtitle: ライブ翻訳の旅を始めるための 3 つのステップ
+home_step_asr_title: 文字起こしサービスを選択してください
+home_step_asr_sub: 音声をテキストに変換する (ASR)
+home_asr_local_prefix: 'ローカル モデル:'
+home_asr_local_hint: ローカル音声モデルの使用。 [詳細設定] → [ASR & VAD] で切り替えます (またはクラウド サービスに移行します)。
+home_step_llm_title: 翻訳サービスを選択してください
+home_step_llm_sub: テキストをターゲット言語に翻訳します
+home_step_lang_title: 字幕言語を選択してください
+home_step_lang_sub: ターゲット言語と出力を設定します
+home_target_lang_label: ターゲット言語
+home_tips_title: ヒント
+home_tips_body: まずモデルをテストしてサービスが動作することを確認し、保存します。左側のサイドバーからいつでも設定を調整できます。
+home_save_settings: 設定の保存
+home_save_success: 保存されました。
+home_open_docs: ドキュメントを見る
+home_open_logs: ログフォルダーを開く
+nav_section_common: 共通
+nav_section_appearance: 外観
+nav_section_engine: エンジン
+nav_section_voice: 音声・通訳
+nav_section_data: データ
+nav_section_tools: ツール
+nav_home: クイックスタート
+nav_manual_translate: 手動翻訳
+nav_audio_translate: 音声ファイル
+nav_overlay_style: オーバーレイ スタイル
+nav_subtitle_window: 字幕ウィンドウ
+nav_asr_vad: ASR および VAD
+nav_translation: 翻訳
+nav_tts: 音声 / TTS
+nav_history: 歴史
+nav_benchmark: ベンチマーク
+nav_diagnostics: 診断
+nav_cache: キャッシュとトランスクリプト
+nav_changelog: 変更履歴
+group_tts_profiles: 音声 / API プロファイル
+tts_voice_auto: (言語ごとに自動)
+tts_dialog_add: TTS プロファイルの追加
+tts_dialog_edit: TTS プロファイルの編集
+tts_btn_fetch: フェッチ
+tts_btn_fetch_models: モデルのフェッチ
+tts_btn_fetch_voices: 音声をフェッチする
+tts_fetching: フェッチ中...
+tts_fetch_ok: '{n} アイテムが見つかり、ドロップダウンが埋められました。'
+tts_fetch_empty: 到達可能ですが、アイテムが返されませんでした。
+tts_name_required: プロファイル名を入力してください。
+loading_please_wait: 準備中です。お待ちください…
+loading_downloading: モデルをダウンロードしています — 最初の実行には時間がかかる場合があります…
+show_details: 詳細を表示
+hide_details: 詳細を隠す

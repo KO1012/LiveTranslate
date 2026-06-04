@@ -1,0 +1,512 @@
+# LiveTranslate es UI strings
+# Generated from English strings; review native phrasing before release.
+
+export_filter: Text Files (*.txt);;SRT Subtitles (*.srt);;Markdown Files (*.md);;All Files (*)
+translating: traduciendo...
+same_language: (mismo idioma)
+overlay_title: Subtítulos
+subtitle_chip_original: Fuente
+subtitle_chip_translation: Traducción
+overlay_waiting_sound: 'Esperando sonido…
+
+  Reproduzca el video o el audio de la reunión y los subtítulos aparecerán aquí en vivo.'
+copy_original: Copia original
+copy_translation: Copiar traducción
+copy_all: Copiar todo
+export_menu: Exportar a archivo
+export_original: Exportar original
+export_translation: Exportar traducción
+export_all: Exportar original + traducción
+export_dialog_title: Exportar subtítulos
+export_empty: Nada que exportar
+export_failed: 'Error al exportar:
+
+  {error}'
+paused: Detener
+running: Ejecutar
+clear: Borrar
+clear_list: Borrar lista de traducción
+settings: Configuración
+subtitle: Sub
+quit: Salir
+tts_toggle: Hablar
+tts_toggle_tip: 'Alternar interpretación simultánea: leer la traducción en voz alta (configurar voz y perfiles en Configuración
+  → Voz / Interpretación)'
+click_through: Clic
+top_most: Lo más destacado
+auto_scroll: Desplazamiento automático
+taskbar: Barra de tareas
+model_label: 'Modelo:'
+target_label: 'Objetivo:'
+source_label: 'Fuente:'
+overlay_opacity: Opacidad
+window_control_panel: LiveTranslate - Panel de control
+tab_vad_asr: VAD/ASR
+tab_translation: Traducción
+tab_benchmark: Punto de referencia
+tab_cache: Caché
+tab_style: Estilo
+tab_subtitle: Subtítulo
+tab_history: Historia
+group_preset: Preestablecido
+preset_default: Predeterminado (Contraste alto)
+preset_transparent: Transparente
+preset_compact: Compacto
+preset_light: Luz
+preset_dracula: Drácula
+preset_nord: Norte
+preset_monokai: Monokai
+preset_solarized: Solarizado Oscuro
+preset_gruvbox: Gruvbox Oscuro
+preset_tokyo_night: Noche de Tokio
+preset_catppuccin: Catuchin Moca
+preset_one_dark: Uno oscuro
+preset_everforest: Bosque eterno
+preset_kanagawa: Kanagawa
+preset_paper_dark: Papel oscuro
+preset_custom: Personalizado
+btn_reset_style: Restablecer valores predeterminados
+btn_reset_positions: Restablecer posiciones de ventana
+label_asr_api_base: 'ASR API Base:'
+group_background: Antecedentes
+label_bg_color: 'Color del contenedor:'
+label_bg_opacity: 'Opacidad del contenedor:'
+label_header_color: 'Color del encabezado:'
+label_header_opacity: 'Opacidad del encabezado:'
+label_border_radius: 'Radio del borde:'
+group_text: Texto
+label_original_font: 'Fuente original:'
+label_original_font_size: 'Tamaño de fuente original:'
+label_original_color: 'Color original:'
+label_translation_font: 'Fuente de traducción:'
+label_translation_font_size: 'Tamaño de fuente de traducción:'
+label_translation_color: 'Color de traducción:'
+label_timestamp_color: 'Color de la marca de tiempo:'
+group_window: Ventana
+label_window_opacity: 'Opacidad de ventana:'
+group_asr_engine: Motor ASR
+group_asr_api: API de audio ASR
+label_asr_api_key: 'Clave API ASR:'
+label_asr_api_model: 'Modelo ASR:'
+label_asr_api_timeout: 'Tiempo de espera de ASR:'
+label_engine: 'Motor:'
+label_language_hint: 'Sugerencia de idioma:'
+asr_lang_auto: Detección automática
+label_device: 'Dispositivo:'
+label_audio: 'Audio:'
+label_hub: 'Centro:'
+hw_detecting: Detectando hardware…
+hw_detected_gpu: 'GPU detectada: {name} ({vram}GB VRAM) · RAM {ram}GB'
+hw_detected_cpu: No se detectó GPU utilizable · RAM {ram}GB (usará CPU)
+hw_reason_gpu_high: 'Mucha VRAM: se recomienda motor de alta precisión (Whisper large-v3/SenseVoice).'
+hw_reason_gpu_mid: 'VRAM moderada: se recomienda una configuración equilibrada (Whisper medium/SenseVoice).'
+hw_reason_gpu_low: 'VRAM limitada: se recomienda una configuración liviana (Whisper pequeña/SenseVoice).'
+hw_reason_cpu: 'Sin GPU pero con suficiente RAM: se recomienda SenseVoice local (se ejecuta en CPU, velocidad moderada).'
+hw_reason_lowend: 'Hardware de gama baja: se recomienda API en la nube (sin descargas grandes, recursos más livianos).'
+hw_recommend_btn: Aplicar recomendado
+hw_recommended_applied: Configuración recomendada aplicada
+hw_whisper_vram_warn: ⚠ Esta GPU tiene ~{vram}GB VRAM; Es posible que Whisper {size} no quepa; considere un tamaño más pequeño.
+label_mic: 'Micrófono:'
+audio_disabled: Deshabilitado (solo micrófono)
+mic_disabled: Deshabilitado
+system_default: Valor predeterminado del sistema
+hub_modelscope: ModeloScope (China)
+hub_huggingface: HuggingFace (Int.)
+label_ui_lang: 'Idioma:'
+group_vad_mode: Modo VAD
+vad_silero: Silero VAD
+vad_energy: Basado en energía
+vad_disabled: Deshabilitado (enviar siempre)
+group_silero_threshold: Umbral Silero VAD
+label_threshold: 'Umbral:'
+group_energy_threshold: Umbral de energía (para modo basado en energía)
+group_timing: Sincronización
+label_min_speech: 'Discurso mínimo:'
+label_max_speech: 'Voz máxima:'
+label_silence: 'Silencio:'
+label_silence_dur: 'Silencio durante:'
+label_incremental_asr: 'ASR incremental:'
+incremental_asr_tooltip: Salida automática de oraciones completas periódicamente durante el habla continua
+label_interim_interval: 'Intervalo intermedio:'
+silence_auto: Automático
+silence_fixed: Fijo
+group_active_model: Modelo activo (usado en canalización)
+btn_apply: Aplicar
+group_model_configs: Configuraciones del modelo
+btn_add: Agregar
+btn_edit: Editar
+btn_duplicate: Duplicado
+btn_remove: Eliminar
+history_filter: Tipo
+history_enabled: Guardar historial
+history_filter_all: Todo
+history_filter_subtitle: Subtítulos
+history_filter_selection: Selección
+history_filter_hotkey: Selección de teclas de acceso rápido
+history_filter_extension: Extensión del navegador
+history_filter_manual: Manual
+history_refresh: Actualizar
+history_export_session: Exportar sesión
+history_delete_selected: Eliminar seleccionado
+history_clear_all: Borrar todo
+history_time: Hora
+history_type: Tipo
+history_original: Originales
+history_translation: Traducción
+history_model: Modelo
+history_explanation: Explicación
+history_polished: Pulido
+history_select_first: Seleccione primero un registro de historial
+history_empty_title: Aún no hay registros
+history_empty_desc: Después de su primera traducción, aquí crecerán nuevos conocimientos.
+history_delete_confirm: ¿Eliminar el registro del historial seleccionado?
+history_export_subtitle_only: Seleccione un registro del historial de subtítulos para exportar la sesión completa
+history_clear_confirm: ¿Borrar todos los registros del historial? Esto no se puede deshacer.
+group_system_prompt: Aviso del sistema (admite {source_lang} {target_lang})
+label_prompt_preset: 'Preestablecido:'
+prompt_daily: Chat diario
+prompt_esports: Deportes electrónicos
+prompt_anime: Anime/Películas
+prompt_custom: Personalizado
+btn_restore_default: Restaurar valor predeterminado
+btn_apply_prompt: Solicitar solicitud
+btn_test_connection: Conexión de prueba
+test_conn_running: Probando...
+test_conn_no_model: Ningún modelo seleccionado
+group_glossary: 'Glosario (uno por línea: término => traducción)'
+glossary_hint: 'Los términos que aparecen en el texto fuente se traducen con su redacción exacta. Ejemplo: Mikasa => 三笠'
+group_timeout: Tiempo de espera de conexión del modelo
+group_network: Red
+label_timeout: Tiempo de espera de conexión del modelo
+group_hotkey: Tecla rápida de traducción de selección
+label_hotkey_enabled: Habilitar tecla de acceso rápido global
+label_hotkey_shortcut: 'Acceso directo:'
+group_manual_translate: Traducción manual de texto
+manual_input_label: Entrada
+manual_input_placeholder: Pegar o escribir texto para traducir
+manual_mode_label: 'Modo:'
+manual_mode_literal: Literal
+manual_mode_natural: Naturales
+manual_mode_explain: Aprendizaje Explicar
+manual_mode_polish: polaco
+manual_translate: Traducir
+manual_copy_translation: Copiar traducción
+manual_empty: Ingrese el texto para traducir
+manual_translating: Traduciendo...
+sel_dialog_title: Traducción y explicación de IA
+sel_loading: Traduciendo...
+sel_error: Solicitud fallida
+sel_done: Hecho
+tab_audio_translate: Traducción de audio
+audio_translate_title: Sube una grabación y traduce
+audio_translate_desc: Elija un archivo de audio y un idioma de destino para transcribirlo y traducirlo automáticamente. El
+  reconocimiento utiliza el ASR configurado en Inicio rápido; La traducción utiliza el modelo seleccionado actualmente.
+audio_translate_file_label: 'Grabación:'
+audio_translate_choose: Elija archivo…
+audio_translate_no_file: Ningún archivo seleccionado
+audio_translate_target_label: 'Idioma de destino:'
+audio_translate_start: Transcribir y traducir
+audio_translate_cancel: Cancelar
+audio_translate_copy: Copiar traducción
+audio_translate_export: Exportar resultado…
+audio_translate_file_filter: Audio files (*.wav *.mp3 *.flac *.ogg *.opus *.m4a *.aac *.wma *.aiff);;All files (*)
+audio_translate_pick_first: Primero elija una grabación.
+audio_translate_decoding: Decodificando audio…
+audio_translate_transcribing: Transcribiendo ({done}/{total})…
+audio_translate_translating: Traduciendo ({done}/{total})…
+audio_translate_no_asr: El motor ASR no está listo. Primero configure el reconocimiento de voz en Inicio rápido.
+audio_translate_no_model: No hay ningún modelo de traducción configurado. Primero configure un servicio de traducción en Inicio
+  rápido.
+audio_translate_empty_result: No se reconoció ningún contenido de voz.
+audio_translate_failed: 'Falló el procesamiento:
+
+  {error}'
+audio_translate_done: Hecho. {count} segmento(s).
+audio_translate_cancelled: Cancelado.
+audio_translate_col_time: Hora
+audio_translate_col_original: Originales
+audio_translate_col_translation: Traducción
+label_source: 'Fuente:'
+btn_test_all: Probar todos los modelos
+testing: Probando...
+mem_warning_msg: El uso de memoria {rss}MB supera el umbral. Reinicie LiveTranslate para liberar los cachés acumulados del
+  motor ASR.
+group_transcript: Persistencia de transcripción
+label_auto_save_transcript: Guardar automáticamente la salida de reconocimiento en transcripciones/carpeta
+auto_save_transcript_tooltip: Crea 3 archivos por sesión (original/traducción/todo), agregados en tiempo real. No limitado
+  por el límite de superposición de 50 mensajes.
+btn_open_transcripts: Abrir carpeta de transcripciones
+group_download_whisper: Descargar modelo Whisper
+btn_download_whisper: Descargar
+whisper_already_cached: Ya en caché
+btn_open_folder: Abrir carpeta de modelos
+btn_delete_all_exit: Eliminar todo && Salir
+scanning: Escaneando...
+no_cached_models: No se encontraron modelos almacenados en caché
+cache_empty_title: Los archivos del modelo residirán aquí
+cache_empty_desc: Una vez que finalicen las descargas, puede ver, limpiar y administrar cachés aquí.
+cache_total: 'Total: {size} ({count} artículos)'
+dialog_delete_title: Eliminar todos los modelos y salir
+dialog_delete_msg: 'Esto eliminará todos los {count} modelos almacenados en caché ({size}) y saldrá de la aplicación.
+
+  Se conservarán los ajustes. Los modelos necesarios se volverán a descargar en el próximo lanzamiento.
+
+  ¿Continuar?'
+window_setup: LiveTranslate - Configuración inicial
+group_download_source: Fuente de descarga del modelo
+group_model_source_optional: Fuente del modelo local (opcional)
+group_cache_path: Carpeta de caché de modelo
+hub_modelscope_full: ModeloScope (China)
+hub_huggingface_full: HuggingFace (Internacional)
+btn_browse: Explorar...
+label_api_base: 'API Base:'
+btn_continue: Continuar
+btn_start_download: Iniciar descarga
+btn_retry: Reintentar
+download_failed: 'Falló la descarga: {error}'
+download_complete: ¡Descarga completa!
+setup_api_hint: '¡Modelos descargados! Ahora configure la API de traducción.
+
+
+  Necesita una URL base de API, una clave de API y un nombre de modelo.
+
+  Se recomienda DeepSeek (asequible y eficaz).'
+setup_api_title: Configurar API de traducción
+window_download: LiveTranslate - Descargar Modelos
+downloading_models: 'Descarga de modelos requeridos: {names}'
+btn_close: Cerrar
+dialog_edit_model: Editar modelo
+dialog_add_model: Agregar modelo
+label_display_name: 'Nombre para mostrar:'
+label_api_key: 'Clave API:'
+label_model: 'Modelo:'
+label_proxy: 'Representante:'
+label_proxy_url: 'URL de proxy:'
+proxy_none: Sin proxy
+proxy_system: Proxy del sistema
+proxy_custom: Proxy personalizado
+json_response: Structured Output (JSON mode)
+json_response_hint: Requests the API to return results in JSON format, reducing extraneous text. Requires API support for
+  json_object mode.
+no_system_role: Sin función del sistema (combinar con el mensaje del usuario)
+no_system_role_hint: Habilítelo si la API rechaza mensajes del sistema (por ejemplo, Qwen-MT). El aviso del sistema se fusionará
+  con el mensaje del usuario.
+no_think: Deshabilitar el pensamiento (omitir razonamiento para modelos de pensamiento)
+no_think_hint: Efectivo para Qwen3 y modelos de pensamiento similares. Reduce el uso de tokens y la latencia mediante enable_thinking=false.
+streaming: Transmisión (salida incremental)
+streaming_hint: Cuando está habilitado, los resultados de la traducción se devuelven de forma incremental para reducir la
+  latencia. Cuando está deshabilitado, espera el resultado completo.
+label_context_turns: 'Contexto:'
+context_turns_hint: Incluya los últimos N pares de traducción como contexto para una mejor coherencia de los términos y resolución
+  de referencias. 0 = sin contexto.
+label_local_api_token: 'Token de API local:'
+local_api_token_placeholder: Opcional; la extensión debe usar el mismo token
+changelog_title: Novedades - {version}
+asr_fast: Rápido
+asr_accurate: Preciso
+error_repetition: Se detectó bucle de repetición. Considere deshabilitar la salida estructurada en la configuración del modelo.
+error_tl_network: Error en la traducción · No hay conexión
+error_tl_timeout: Error en la traducción · Tiempo de espera
+error_tl_auth: Error en la traducción · Clave API
+error_tl_ratelimit: Error en la traducción · Límite de cuota/tarifa
+error_tl_server: Falló la traducción · Error del servidor
+error_tl_generic: Error en la traducción
+label_extra_body: extra_body (JSON)
+extra_body_hint: JSON object of provider-specific parameters merged into request extra_body (e.g. thinking_budget / reasoning_effort)
+extra_body_invalid: extra_body must be a valid JSON object
+tab_changelog: Registro de cambios
+label_pricing: 'Precios:'
+label_input_price: Entrada
+label_output_price: Salida
+price_suffix: /1 millón de tok
+label_advanced_params: Parámetros avanzados
+label_temperature: Temperatura
+label_top_p: P superior
+label_max_tokens: Fichas máximas
+label_frequency_penalty: Penalización de frecuencia
+label_presence_penalty: Penalización por presencia
+label_seed: Semilla
+override_enable: Anulación
+override_hint: Cuando no está marcado, utiliza la configuración global o predeterminada del servidor
+loading_model: 'Cargando {name}...
+
+  Por favor espera.'
+error_title: Error
+error_load_asr: 'Error al cargar el modelo ASR:
+
+  {error}'
+error_asr_status: 'ASR falló: {error}'
+error_asr_not_ready: ASR no está listo
+window_log: LiveTranslate - Registro
+show_debug: Mostrar DEPURACIÓN
+tray_tooltip: LiveTranslate - Traducción en tiempo real
+tray_start: Inicio
+tray_stop: Detener
+tray_pause: Pausa
+tray_resume: Reanudar
+tray_show_overlay: Mostrar superposición
+tray_hide_overlay: Ocultar superposición
+hide: Ocultar
+hide_tray_hint: Superposición oculta. Haga clic derecho en el icono de la bandeja para mostrarlo nuevamente.
+tray_show_log: Mostrar registro
+tray_show_panel: Mostrar configuración
+tray_tts: Hablar traducción (TTS)
+tray_menu_overlay: Superposición
+tray_menu_model: Modelo
+tray_menu_target_lang: Idioma de destino
+tray_menu_asr_lang: Sugerencia de idioma
+tray_more_langs: Más...
+mode_full: Sencillo
+mode_compact: Detalle
+mode_toggle_tip: Alternar vista simple/detallada
+subwin_mode: Modo de subtítulos
+subwin_settings: Configuración de subtítulos
+subwin_show: Ventana de subtítulos
+subwin_hide: Ventana de subtítulos
+subwin_basic: Básico
+subwin_sentences: 'Oraciones:'
+subwin_window_width: 'Ancho de ventana:'
+subwin_background: Antecedentes
+subwin_bg_color: 'Color:'
+subwin_bg_opacity: 'Opacidad:'
+subwin_text_lines: Líneas de texto
+subwin_original: Originales
+subwin_translation: Traducción
+subwin_font: 'Fuente:'
+subwin_font_size: 'Tamaño de fuente:'
+subwin_color: 'Color:'
+subwin_opacity: 'Opacidad:'
+subwin_outline: Esquema
+subwin_outline_color: 'Color del contorno:'
+subwin_outline_width: 'Ancho del contorno:'
+subwin_align: 'Alinear:'
+subwin_align_left: Izquierda
+subwin_align_center: Centro
+subwin_align_right: Derecha
+subwin_add_line: + Agregar línea
+subwin_remove_line: Eliminar
+subwin_enabled: Habilitado
+subwin_line_spacing: 'Interlineado:'
+subwin_hint: 'Haga clic con el botón central para arrastrar | Modo de edición: haga clic izquierdo y arrastre, cambie el tamaño
+  en la esquina, haga doble clic para salir'
+subwin_edit_mode: Modo de edición
+subwin_edit_line: Editar línea de texto
+subwin_line_type: Tipo
+subwin_cancel: Cancelar
+subwin_help: Ayuda
+subwin_reset: Restablecer
+subwin_drag_hint: Se muestra la ventana de subtítulos. Haga clic con el botón central para arrastrar.
+subwin_reset_confirm: ¿Restablecer todas las configuraciones de subtítulos a los valores predeterminados?
+subwin_border_radius: Radio del borde
+subwin_bg_image: 'Imagen de fondo:'
+subwin_bg_image_select: Seleccione...
+subwin_bg_image_clear: Borrar
+subwin_move_up: ▲
+subwin_move_down: ▼
+subwin_target_lang: 'Idioma:'
+subwin_animation: Animación
+subwin_auto_hide: 'Ocultar automáticamente:'
+subwin_auto_hide_sec: segundos (0=apagado)
+subwin_hide_animation: 'Ocultar animación:'
+subwin_hide_duration: 'Duración:'
+subwin_entry_anim: 'Entrada:'
+subwin_exit_anim: 'Salir:'
+subwin_anim_duration: 'Duración:'
+subwin_anim_none: Ninguno
+subwin_anim_fade: Desvanecimiento
+subwin_anim_slide_left: Deslizar hacia la izquierda
+subwin_anim_slide_right: Deslizar hacia la derecha
+subwin_anim_slide_up: Deslizar hacia arriba
+subwin_anim_slide_down: Deslizar hacia abajo
+tab_diagnostics: Diagnóstico
+tts_engine_openai: OpenAI-compatible /audio/speech
+diagnostics_desc: Exporte un paquete de diagnóstico redactado para solucionar problemas. Incluye resumen del entorno, configuración
+  redactada, configuración de usuario redactada y registros recientes.
+diagnostics_privacy_hint: El paquete excluye History.db, transcripciones y claves API completas. Revisa el zip antes de compartir.
+btn_export_diagnostics: Exportar diagnóstico
+diagnostics_save_title: Guardar paquete de diagnóstico
+diagnostics_exported: 'Paquete de diagnóstico exportado:
+
+  {path}'
+diagnostics_failed: 'No se pudieron exportar los diagnósticos:
+
+  {error}'
+tab_tts: TTS / Voz
+tts_intro: Pronuncie la traducción en voz alta para interpretación simultánea. Edge TTS es gratuito y no necesita clave API.
+  Para introducir la voz en aplicaciones de reuniones, instale un cable de audio virtual y selecciónelo como dispositivo de
+  salida.
+group_tts_enable: Texto a voz
+label_tts_enabled: Hablar traducciones en voz alta (interpretación simultánea)
+label_tts_engine: 'Motor:'
+tts_engine_edge: Edge TTS (gratis, sin clave)
+tts_engine_azure: Servicio de voz de Azure
+tts_engine_elevenlabs: ElevenLabs
+label_tts_voice: 'Voz:'
+tts_voice_placeholder: vacío = automático por idioma de destino
+label_tts_volume: 'Volumen:'
+label_tts_output: 'Dispositivo de salida:'
+btn_tts_test: Prueba de voz
+tts_testing: Sintetizando...
+label_tts_api_base: 'API Base:'
+tts_test_ok: Reproducción correcta
+tts_test_empty: No se produce audio
+tts_sample_text: Esta es una prueba de voz de interpretación simultánea.
+group_tts_edge: Opciones de TTS perimetrales
+label_tts_rate: 'Velocidad del habla:'
+group_tts_openai: Opciones de API de voz
+label_tts_api_key: 'Clave API:'
+label_tts_region: 'Región:'
+label_tts_model: 'Modelo:'
+label_tts_speed: 'Velocidad:'
+home_hero_title: Conectar voces, comprender el mundo
+home_hero_subtitle: Tres pasos para comenzar su viaje de traducción en vivo
+home_step_asr_title: Elija un servicio de transcripción
+home_step_asr_sub: Convertir voz en texto (ASR)
+home_asr_local_prefix: 'Modelo local:'
+home_asr_local_hint: Usando un modelo de habla local. Cámbielo (o pase a un servicio en la nube) en Avanzado → ASR y VAD.
+home_step_llm_title: Elija un servicio de traducción
+home_step_llm_sub: Traducir texto a su idioma de destino
+home_step_lang_title: Elija un idioma de subtítulos
+home_step_lang_sub: Establecer el idioma de destino y la salida
+home_target_lang_label: Idioma de destino
+home_tips_title: Consejos
+home_tips_body: Pruebe primero el modelo para confirmar que el servicio funciona y luego guárdelo. Puede ajustar cualquier
+  configuración en cualquier momento desde la barra lateral izquierda.
+home_save_settings: Guardar configuración
+home_save_success: Guardado.
+home_open_docs: Ver documentos
+home_open_logs: Abrir carpeta de registro
+nav_section_common: Común
+nav_section_appearance: Apariencia
+nav_section_engine: Motores
+nav_section_voice: Voz / Interpretación
+nav_section_data: Datos
+nav_section_tools: Herramientas
+nav_home: Inicio rápido
+nav_manual_translate: Traducción manual
+nav_audio_translate: Archivo de audio
+nav_overlay_style: Estilo de superposición
+nav_subtitle_window: Ventana de subtítulos
+nav_asr_vad: ASR y VAD
+nav_translation: Traducción
+nav_tts: Voz/TTS
+nav_history: Historia
+nav_benchmark: Punto de referencia
+nav_diagnostics: Diagnóstico
+nav_cache: Caché y transcripciones
+nav_changelog: Registro de cambios
+group_tts_profiles: Perfiles de voz/API
+tts_voice_auto: (auto por idioma)
+tts_dialog_add: Agregar perfil TTS
+tts_dialog_edit: Editar perfil TTS
+tts_btn_fetch: Recuperar
+tts_btn_fetch_models: Recuperar modelos
+tts_btn_fetch_voices: Recuperar voces
+tts_fetching: Obteniendo...
+tts_fetch_ok: Se encontraron {n} artículos, se completó el menú desplegable.
+tts_fetch_empty: Accesible, pero no se devuelve ningún artículo.
+tts_name_required: Introduzca un nombre de perfil.
+loading_please_wait: Preparándose, por favor espere…
+loading_downloading: 'Descargando el modelo: la primera ejecución puede tardar un poco...'
+show_details: Mostrar detalles
+hide_details: Ocultar detalles

@@ -1,0 +1,519 @@
+# LiveTranslate fr UI strings
+# Generated from English strings; review native phrasing before release.
+
+export_filter: Text Files (*.txt);;SRT Subtitles (*.srt);;Markdown Files (*.md);;All Files (*)
+translating: traduisant...
+same_language: (même langue)
+overlay_title: Sous-titres
+subtitle_chip_original: Source
+subtitle_chip_translation: Traduction
+overlay_waiting_sound: 'En attente du son…
+
+  La lecture de la vidéo ou de l''audio de la réunion et les sous-titres apparaîtront ici en direct.'
+copy_original: Copier l'original
+copy_translation: Copier la traduction
+copy_all: Copier tout
+export_menu: Exporter vers un fichier
+export_original: Exporter l'original
+export_translation: Exporter la traduction
+export_all: Exporter l'original + traduction
+export_dialog_title: Exporter les sous-titres
+export_empty: Rien à exporter
+export_failed: 'Échec de l''exportation :
+
+  {error}'
+paused: Arrêter
+running: Exécuter
+clear: Effacer
+clear_list: Effacer la liste de traduction
+settings: Paramètres
+subtitle: Sous
+quit: Quitter
+tts_toggle: Parler
+tts_toggle_tip: 'Basculer l''interprétation simultanée : lire la traduction à haute voix (configurer la voix et les profils
+  dans Paramètres → Voix / Interprétation)'
+click_through: Clic
+top_most: Le plus haut
+auto_scroll: Défilement automatique
+taskbar: Barre des tâches
+model_label: 'Modèle :'
+target_label: 'Cible :'
+source_label: 'Source :'
+overlay_opacity: Opacité
+window_control_panel: LiveTranslate - Panneau de configuration
+tab_vad_asr: VAD/ASR
+tab_translation: Traduction
+tab_benchmark: Référence
+tab_cache: Cache
+tab_style: Modèle
+tab_subtitle: Sous-titre
+tab_history: Historique
+group_preset: Préréglage
+preset_default: Par défaut (contraste élevé)
+preset_transparent: Transparent
+preset_compact: Compacte
+preset_light: Lumière
+preset_dracula: Dracula
+preset_nord: Nord
+preset_monokai: Monokaï
+preset_solarized: Sombre solarisé
+preset_gruvbox: Gruvbox Sombre
+preset_tokyo_night: Nuit de Tokyo
+preset_catppuccin: Catppuccin Moka
+preset_one_dark: Un sombre
+preset_everforest: Forêt éternelle
+preset_kanagawa: Kanagawa
+preset_paper_dark: Papier foncé
+preset_custom: Personnalisé
+btn_reset_style: Réinitialiser les paramètres par défaut
+btn_reset_positions: Réinitialiser les positions des fenêtres
+label_asr_api_base: 'ASR API Base:'
+group_background: Contexte
+label_bg_color: 'Couleur du conteneur :'
+label_bg_opacity: 'Opacité du conteneur :'
+label_header_color: 'Couleur de l''en-tête :'
+label_header_opacity: 'Opacité de l''en-tête :'
+label_border_radius: 'Rayon de bordure :'
+group_text: Texte
+label_original_font: 'Police originale :'
+label_original_font_size: 'Taille de police originale :'
+label_original_color: 'Couleur d''origine :'
+label_translation_font: 'Police de traduction :'
+label_translation_font_size: 'Taille de la police de traduction :'
+label_translation_color: 'Couleur de traduction :'
+label_timestamp_color: 'Couleur de l''horodatage :'
+group_window: Fenêtre
+label_window_opacity: 'Opacité de la fenêtre :'
+group_asr_engine: Moteur ASR
+group_asr_api: API audio ASR
+label_asr_api_key: 'Clé API ASR :'
+label_asr_api_model: 'Modèle ASR :'
+label_asr_api_timeout: 'Délai d''expiration ASR :'
+label_engine: 'Moteur :'
+label_language_hint: 'Astuce linguistique :'
+asr_lang_auto: Détection automatique
+label_device: 'Appareil :'
+label_audio: 'Audio :'
+label_hub: 'Concentrateur :'
+hw_detecting: Détection du matériel…
+hw_detected_gpu: 'GPU détecté : {name} ({vram}Go de VRAM) · RAM {ram}Go'
+hw_detected_cpu: Aucun GPU utilisable détecté · RAM {ram}GB (utilisera le CPU)
+hw_reason_gpu_high: Beaucoup de VRAM — moteur de haute précision recommandé (Whisper large-v3 / SenseVoice).
+hw_reason_gpu_mid: VRAM modérée — configuration équilibrée recommandée (Whisper medium / SenseVoice).
+hw_reason_gpu_low: VRAM limitée — configuration légère recommandée (Whisper small / SenseVoice).
+hw_reason_cpu: Pas de GPU mais suffisamment de RAM — SenseVoice local recommandé (fonctionne sur CPU, vitesse modérée).
+hw_reason_lowend: Matériel bas de gamme — API cloud recommandée (pas de téléchargement volumineux, le plus léger en ressources).
+hw_recommend_btn: Appliquer recommandé
+hw_recommended_applied: Paramètres recommandés appliqués
+hw_whisper_vram_warn: ⚠ Ce GPU a ~{vram}Go de VRAM ; chargement Whisper {size} peut ne pas convenir – envisagez une taille
+  plus petite.
+label_mic: 'Micro :'
+audio_disabled: Désactivé (micro uniquement)
+mic_disabled: Désactivé
+system_default: Système par défaut
+hub_modelscope: ModelScope (Chine)
+hub_huggingface: HuggingFace (International)
+label_ui_lang: 'Langue :'
+group_vad_mode: Mode VAD
+vad_silero: Silero VAD
+vad_energy: Basé sur l'énergie
+vad_disabled: Désactivé (toujours envoyer)
+group_silero_threshold: Seuil Silero VAD
+label_threshold: 'Seuil :'
+group_energy_threshold: Seuil d'énergie (pour le mode basé sur l'énergie)
+group_timing: Chronométrage
+label_min_speech: 'Discours min :'
+label_max_speech: 'Nombre maximum de paroles :'
+label_silence: 'Silence :'
+label_silence_dur: 'Silence durée :'
+label_incremental_asr: 'ASR incrémentiel :'
+incremental_asr_tooltip: Sortie automatique des phrases terminées périodiquement pendant la parole continue
+label_interim_interval: 'Intervalle intermédiaire :'
+silence_auto: Automatique
+silence_fixed: Corrigé
+group_active_model: Modèle actif (utilisé dans le pipeline)
+btn_apply: Postuler
+group_model_configs: Configurations du modèle
+btn_add: Ajouter
+btn_edit: Modifier
+btn_duplicate: Duplicata
+btn_remove: Supprimer
+history_filter: Type
+history_enabled: Enregistrer l'historique
+history_filter_all: Tous
+history_filter_subtitle: Sous-titres
+history_filter_selection: Sélection
+history_filter_hotkey: Sélection de raccourci clavier
+history_filter_extension: Extension de navigateur
+history_filter_manual: Manuel
+history_refresh: Actualiser
+history_export_session: Session d'exportation
+history_delete_selected: Supprimer la sélection
+history_clear_all: Tout effacer
+history_time: Heure
+history_type: Type
+history_original: Original
+history_translation: 'Traduction
+
+  Modèle'
+history_model: ''
+history_explanation: Explication
+history_polished: Poli
+history_select_first: Sélectionnez d'abord un enregistrement d'historique
+history_empty_title: Aucun enregistrement pour l'instant
+history_empty_desc: Après votre première traduction, de nouvelles connaissances se développeront ici.
+history_delete_confirm: Supprimer l'enregistrement d'historique sélectionné ?
+history_export_subtitle_only: Sélectionnez un enregistrement de l'historique des sous-titres pour exporter la session complète
+history_clear_confirm: Effacer tous les enregistrements de l'historique ? Cela ne peut pas être annulé.
+group_system_prompt: Invite système (prend en charge {source_lang} {target_lang})
+label_prompt_preset: 'Préréglage :'
+prompt_daily: Discussion quotidienne
+prompt_esports: E-sport
+prompt_anime: Anime/Films
+prompt_custom: Personnalisé
+btn_restore_default: Restaurer les valeurs par défaut
+btn_apply_prompt: Appliquer l'invite
+btn_test_connection: Test de connexion
+test_conn_running: Test...
+test_conn_no_model: Aucun modèle sélectionné
+group_glossary: 'Glossaire (un par ligne : terme => traduction)'
+glossary_hint: 'Les termes qui apparaissent dans le texte source sont traduits avec votre formulation exacte. Exemple : Mikasa
+  => 三笠'
+group_timeout: Expiration du délai de connexion du modèle
+group_network: Réseau
+label_timeout: Délai de connexion du modèle
+group_hotkey: Touche de raccourci de traduction de sélection
+label_hotkey_enabled: Activer le raccourci clavier global
+label_hotkey_shortcut: 'Raccourci :'
+group_manual_translate: Traduction de texte manuelle
+manual_input_label: Entrée
+manual_input_placeholder: 'Coller ou saisir le texte à traduire
+
+  Mode'
+manual_mode_label: ':'
+manual_mode_literal: Littéral
+manual_mode_natural: Naturel
+manual_mode_explain: Apprentissage Expliquer
+manual_mode_polish: Polonais
+manual_translate: Traduire
+manual_copy_translation: Copier la traduction
+manual_empty: Saisissez le texte à traduire
+manual_translating: Traduction...
+sel_dialog_title: Traduction et explication de l'IA
+sel_loading: Traduction...
+sel_error: Échec de la demande
+sel_done: Terminé
+tab_audio_translate: Traduction audio
+audio_translate_title: Télécharger un enregistrement et traduire
+audio_translate_desc: Choisissez un fichier audio et une langue cible pour le transcrire et le traduire automatiquement. La
+  reconnaissance utilise l'ASR configuré dans Quick Start ; la traduction utilise le modèle actuellement sélectionné.
+audio_translate_file_label: 'Enregistrement :'
+audio_translate_choose: Choisir le fichier…
+audio_translate_no_file: Aucun fichier sélectionné
+audio_translate_target_label: 'Langue cible :'
+audio_translate_start: Transcrire et traduire
+audio_translate_cancel: Annuler
+audio_translate_copy: Copier la traduction
+audio_translate_export: Exporter le résultat…
+audio_translate_file_filter: Audio files (*.wav *.mp3 *.flac *.ogg *.opus *.m4a *.aac *.wma *.aiff);;All files (*)
+audio_translate_pick_first: Veuillez d'abord choisir un enregistrement
+audio_translate_decoding: Décodage audio…
+audio_translate_transcribing: Transcription ({done}/{total})…
+audio_translate_translating: Traduction ({done}/{total})…
+audio_translate_no_asr: Le moteur ASR n'est pas prêt. Configurez d'abord la reconnaissance vocale dans Quick Start.
+audio_translate_no_model: Aucun modèle de traduction configuré. Configurez d’abord un service de traduction dans Quick Start.
+audio_translate_empty_result: Aucun contenu vocal n'a été reconnu.
+audio_translate_failed: 'Échec du traitement :
+
+  {error}'
+audio_translate_done: Terminé. {count} segment(s).
+audio_translate_cancelled: Annulé.
+audio_translate_col_time: Heure
+audio_translate_col_original: Original
+audio_translate_col_translation: Traduction
+label_source: 'Source :'
+btn_test_all: Tester tous les modèles
+testing: Test...
+mem_warning_msg: Utilisation de la mémoire {rss}Mo dépasse le seuil. Redémarrez LiveTranslate pour libérer les caches du moteur
+  ASR accumulés.
+group_transcript: Persistance de la transcription
+label_auto_save_transcript: Sauvegarde automatique de la sortie de reconnaissance dans les relevés de notes/dossier
+auto_save_transcript_tooltip: Crée 3 fichiers par session (original/traduction/tout), ajoutés en temps réel. Non limité par
+  le plafond de superposition de 50 messages.
+btn_open_transcripts: Ouvrir le dossier des relevés de notes
+group_download_whisper: Télécharger le modèle Whisper
+btn_download_whisper: Télécharger
+whisper_already_cached: Déjà mis en cache
+btn_open_folder: Ouvrir le dossier Modèles
+btn_delete_all_exit: Supprimer tout && Quitter
+scanning: Numérisation...
+no_cached_models: Aucun modèle mis en cache trouvé
+cache_empty_title: Les fichiers modèles vivront ici
+cache_empty_desc: Une fois les téléchargements terminés, vous pouvez afficher, nettoyer et gérer les caches ici.
+cache_total: 'Total : {size} ({count} éléments)'
+dialog_delete_title: Supprimer tous les modèles et quitter
+dialog_delete_msg: 'Cela supprimera tous les modèles {count} mis en cache ({size}) et quittera l''application.
+
+  Les paramètres seront conservés. Les modèles requis seront retéléchargés lors du prochain lancement.
+
+  Continuer?'
+window_setup: LiveTranslate - Configuration initiale
+group_download_source: Source de téléchargement du modèle
+group_model_source_optional: Source du modèle local (facultatif)
+group_cache_path: Dossier de cache de modèle
+hub_modelscope_full: ModelScope (Chine)
+hub_huggingface_full: HuggingFace (International)
+btn_browse: Parcourir...
+label_api_base: 'API Base:'
+btn_continue: Continuer
+btn_start_download: Démarrer le téléchargement
+btn_retry: Réessayer
+download_failed: 'Échec du téléchargement : {error}'
+download_complete: Téléchargement terminé !
+setup_api_hint: 'Modèles téléchargés ! Configurez maintenant l''API de traduction.
+
+
+  Vous avez besoin d''une URL de base API, d''une clé API et d''un nom de modèle.
+
+  DeepSeek est recommandé (abordable et efficace).'
+setup_api_title: Configurer l'API de traduction
+window_download: LiveTranslate - Télécharger des modèles
+downloading_models: 'Téléchargement des modèles requis : {names}'
+btn_close: Fermer
+dialog_edit_model: Modifier le modèle
+dialog_add_model: Ajouter un modèle
+label_display_name: 'Nom d''affichage :'
+label_api_key: 'Clé API :'
+label_model: 'Modèle :'
+label_proxy: 'Mandataire :'
+label_proxy_url: 'URL du proxy :'
+proxy_none: Pas de procuration
+proxy_system: Proxy système
+proxy_custom: Proxy personnalisé
+json_response: Structured Output (JSON mode)
+json_response_hint: Requests the API to return results in JSON format, reducing extraneous text. Requires API support for
+  json_object mode.
+no_system_role: Aucun rôle système (fusionner dans le message utilisateur)
+no_system_role_hint: Activer si l'API rejette les messages système (par exemple Qwen-MT). L'invite système sera fusionnée
+  dans le message utilisateur.
+no_think: Désactiver la réflexion (ignorer le raisonnement pour les modèles de réflexion)
+no_think_hint: Efficace pour Qwen3 et les modèles de pensée similaires. Réduit l'utilisation et la latence des jetons via
+  activate_thinking=false.
+streaming: Streaming (sortie incrémentielle)
+streaming_hint: Lorsqu'il est activé, les résultats de traduction sont renvoyés de manière incrémentielle pour une latence
+  plus faible. Lorsqu'il est désactivé, attend le résultat complet.
+label_context_turns: 'Contexte :'
+context_turns_hint: Incluez les N dernières paires de traduction comme contexte pour une meilleure cohérence des termes et
+  une meilleure résolution des références. 0 = pas de contexte.
+label_local_api_token: 'Jeton d''API locale :'
+local_api_token_placeholder: Facultatif ; l'extension doit utiliser le même jeton
+changelog_title: Quoi de neuf - {version}
+asr_fast: Rapide
+asr_accurate: Précis
+error_repetition: Boucle de répétition détectée. Pensez à désactiver la sortie structurée dans les paramètres du modèle.
+error_tl_network: Échec de la traduction · Aucune connexion
+error_tl_timeout: Échec de la traduction · Délai d'attente
+error_tl_auth: Échec de la traduction · Clé API
+error_tl_ratelimit: Échec de la traduction · Limite de quota/taux
+error_tl_server: Échec de la traduction · Erreur de serveur
+error_tl_generic: Échec de la traduction
+label_extra_body: extra_body (JSON)
+extra_body_hint: JSON object of provider-specific parameters merged into request extra_body (e.g. thinking_budget / reasoning_effort)
+extra_body_invalid: extra_body must be a valid JSON object
+tab_changelog: Journal des modifications
+label_pricing: 'Tarif :'
+label_input_price: Entrée
+label_output_price: Sortie
+price_suffix: /1 million de jetons
+label_advanced_params: Paramètres avancés
+label_temperature: Température
+label_top_p: Haut P
+label_max_tokens: Nombre maximum de jetons
+label_frequency_penalty: Pénalité de fréquence
+label_presence_penalty: Pénalité de présence
+label_seed: Semence
+override_enable: Remplacement
+override_hint: Lorsque cette case n'est pas cochée, utilise la configuration par défaut du serveur ou la configuration globale
+loading_model: 'Chargement de {name}...
+
+  Veuillez patienter.'
+error_title: Erreur
+error_load_asr: 'Échec du chargement du modèle ASR :
+
+  {error}'
+error_asr_status: 'ASR a échoué : {error}'
+error_asr_not_ready: ASR n'est pas prêt
+window_log: LiveTranslate - Journal
+show_debug: Afficher le DÉBOGAGE
+tray_tooltip: LiveTranslate - Traduction en temps réel
+tray_start: Début
+tray_stop: Arrêter
+tray_pause: Pause
+tray_resume: CV
+tray_show_overlay: Afficher la superposition
+tray_hide_overlay: Masquer la superposition
+hide: Masquer
+hide_tray_hint: Superposition masquée. Cliquez avec le bouton droit sur l'icône de la barre d'état pour l'afficher à nouveau.
+tray_show_log: Afficher le journal
+tray_show_panel: Afficher les paramètres
+tray_tts: Traduction orale (TTS)
+tray_menu_overlay: Superposition
+tray_menu_model: Modèle
+tray_menu_target_lang: Langue cible
+tray_menu_asr_lang: Conseil de langue
+tray_more_langs: Plus...
+mode_full: Simple
+mode_compact: Détail
+mode_toggle_tip: Basculer entre la vue simple/détail
+subwin_mode: Mode sous-titres
+subwin_settings: Paramètres des sous-titres
+subwin_show: Fenêtre de sous-titres
+subwin_hide: Fenêtre de sous-titres
+subwin_basic: De base
+subwin_sentences: 'Phrases :'
+subwin_window_width: 'Largeur de la fenêtre :'
+subwin_background: Contexte
+subwin_bg_color: 'Couleur :'
+subwin_bg_opacity: 'Opacité :'
+subwin_text_lines: Lignes de texte
+subwin_original: Original
+subwin_translation: Traduction
+subwin_font: 'Police :'
+subwin_font_size: 'Taille de la police :'
+subwin_color: 'Couleur :'
+subwin_opacity: 'Opacité :'
+subwin_outline: Aperçu
+subwin_outline_color: 'Couleur du contour :'
+subwin_outline_width: 'Largeur du contour :'
+subwin_align: 'Aligner :'
+subwin_align_left: Gauche
+subwin_align_center: Centre
+subwin_align_right: Droite
+subwin_add_line: + Ajouter une ligne
+subwin_remove_line: Supprimer
+subwin_enabled: Activé
+subwin_line_spacing: 'Espacement des lignes :'
+subwin_hint: 'Cliquez avec le bouton central pour faire glisser | Mode édition : faites glisser avec le bouton gauche, redimensionnez
+  dans le coin, double-cliquez pour quitter'
+subwin_edit_mode: Mode édition
+subwin_edit_line: Modifier la ligne de texte
+subwin_line_type: Type
+subwin_cancel: Annuler
+subwin_help: Aide
+subwin_reset: Réinitialiser
+subwin_drag_hint: Fenêtre de sous-titre affichée. Cliquez avec le bouton du milieu pour faire glisser.
+subwin_reset_confirm: Réinitialiser tous les paramètres de sous-titres aux valeurs par défaut ?
+subwin_border_radius: Rayon de bordure
+subwin_bg_image: 'Image d''arrière-plan :'
+subwin_bg_image_select: Sélectionnez...
+subwin_bg_image_clear: Effacer
+subwin_move_up: ▲
+subwin_move_down: ▼
+subwin_target_lang: 'Langue :'
+subwin_animation: Animation
+subwin_auto_hide: 'Masquer automatiquement :'
+subwin_auto_hide_sec: s (0=éteint)
+subwin_hide_animation: 'Masquer l''animation :'
+subwin_hide_duration: 'Durée :'
+subwin_entry_anim: 'Entrée :'
+subwin_exit_anim: 'Quitter :'
+subwin_anim_duration: 'Durée :'
+subwin_anim_none: Aucun
+subwin_anim_fade: Fondu
+subwin_anim_slide_left: Glisser vers la gauche
+subwin_anim_slide_right: Glisser vers la droite
+subwin_anim_slide_up: Glisser vers le haut
+subwin_anim_slide_down: Glisser vers le bas
+tab_diagnostics: Diagnostic
+tts_engine_openai: OpenAI-compatible /audio/speech
+diagnostics_desc: Exportez un ensemble de diagnostics rédigé à des fins de dépannage. Il comprend un résumé de l'environnement,
+  une configuration expurgée, des paramètres utilisateur expurgés et des journaux récents.
+diagnostics_privacy_hint: Le bundle exclut history.db, les transcriptions et les clés API complètes. Vérifiez le zip avant
+  de partager.
+btn_export_diagnostics: Exporter les diagnostics
+diagnostics_save_title: Enregistrer l'ensemble de diagnostics
+diagnostics_exported: 'Bundle de diagnostic exporté :
+
+  {path}'
+diagnostics_failed: 'Échec de l''exportation des diagnostics :
+
+  {error}'
+tab_tts: TTS/Voix
+tts_intro: Prononcez la traduction à haute voix pour une interprétation simultanée. Edge TTS est gratuit et ne nécessite aucune
+  clé API. Pour transmettre la voix aux applications de réunion, installez un câble audio virtuel et choisissez-le comme périphérique
+  de sortie.
+group_tts_enable: Synthèse vocale
+label_tts_enabled: Prononcez les traductions à haute voix (interprétation simultanée)
+label_tts_engine: 'Moteur :'
+tts_engine_edge: Edge TTS (gratuit, sans clé)
+tts_engine_azure: Service vocal Azure
+tts_engine_elevenlabs: OnzeLabs
+label_tts_voice: 'Voix :'
+tts_voice_placeholder: vide = automatique par langue cible
+label_tts_volume: 'Volume :'
+label_tts_output: 'Périphérique de sortie :'
+btn_tts_test: Test vocal
+tts_testing: Synthèse...
+label_tts_api_base: 'API Base:'
+tts_test_ok: Lecture OK
+tts_test_empty: Aucun son produit
+tts_sample_text: Il s'agit d'un test d'interprétation vocale simultanée.
+group_tts_edge: Options TTS Edge
+label_tts_rate: 'Débit de parole :'
+group_tts_openai: Options de l'API vocale
+label_tts_api_key: 'Clé API :'
+label_tts_region: 'Région :'
+label_tts_model: 'Modèle :'
+label_tts_speed: 'Vitesse :'
+home_hero_title: Connectez les voix, comprenez le monde
+home_hero_subtitle: Trois étapes pour démarrer votre parcours de traduction en direct
+home_step_asr_title: Choisissez un service de transcription
+home_step_asr_sub: Transformer la parole en texte (ASR)
+home_asr_local_prefix: 'Modèle local :'
+home_asr_local_hint: Utilisation d'un modèle vocal local. Changez-le (ou passez à un service cloud) dans Avancé → ASR et VAD.
+home_step_llm_title: Choisissez un service de traduction
+home_step_llm_sub: Traduire le texte dans votre langue cible
+home_step_lang_title: Choisissez une langue de sous-titres
+home_step_lang_sub: Définir la langue cible et la sortie
+home_target_lang_label: Langue cible
+home_tips_title: Conseils
+home_tips_body: Testez d'abord le modèle pour confirmer que le service fonctionne, puis enregistrez. Vous pouvez ajuster n’importe
+  quel paramètre à tout moment à partir de la barre latérale gauche.
+home_save_settings: Enregistrer les paramètres
+home_save_success: Enregistré.
+home_open_docs: Afficher les documents
+home_open_logs: Ouvrir le dossier des journaux
+nav_section_common: Commun
+nav_section_appearance: Apparence
+nav_section_engine: Moteurs
+nav_section_voice: Voix / Interprétation
+nav_section_data: Données
+nav_section_tools: Outils
+nav_home: Démarrage rapide
+nav_manual_translate: Traduction manuelle
+nav_audio_translate: Fichier audio
+nav_overlay_style: Style de superposition
+nav_subtitle_window: Fenêtre de sous-titres
+nav_asr_vad: ASR et VAD
+nav_translation: Traduction
+nav_tts: Voix/TTS
+nav_history: Historique
+nav_benchmark: Référence
+nav_diagnostics: Diagnostic
+nav_cache: Cache et transcriptions
+nav_changelog: Journal des modifications
+group_tts_profiles: Profils voix/API
+tts_voice_auto: (auto par langue)
+tts_dialog_add: Ajouter un profil TTS
+tts_dialog_edit: Modifier le profil TTS
+tts_btn_fetch: Récupérer
+tts_btn_fetch_models: Récupérer des modèles
+tts_btn_fetch_voices: Récupérer des voix
+tts_fetching: Récupération...
+tts_fetch_ok: Élément(s) {n} trouvé(s), rempli la liste déroulante.
+tts_fetch_empty: Joignable, mais aucun article n'a été renvoyé.
+tts_name_required: Veuillez entrer un nom de profil.
+loading_please_wait: Préparation, veuillez patienter…
+loading_downloading: Téléchargement du modèle — la première exécution peut prendre un certain temps…
+show_details: Afficher les détails
+hide_details: Masquer les détails

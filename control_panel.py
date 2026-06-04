@@ -47,7 +47,7 @@ from model_manager import (
     get_cache_entries,
     get_models_dir,
 )
-from i18n import t, LANGUAGES
+from i18n import t, LANGUAGES, SUPPORTED_UI_LANGUAGES
 from subtitle_settings import SubtitleSettingsWidget
 from history import HistoryStore
 from logging_utils import redact_secret_data
@@ -2116,11 +2116,13 @@ class ControlPanel(QWidget):
         self._hub_combo.currentIndexChanged.connect(self._auto_save)
 
         self._ui_lang_combo = QComboBox()
-        self._ui_lang_combo.addItems(["English", "中文"])
         from i18n import get_lang
 
         saved_lang = s.get("ui_lang", get_lang())
-        self._ui_lang_combo.setCurrentIndex(0 if saved_lang == "en" else 1)
+        for code, name in SUPPORTED_UI_LANGUAGES:
+            self._ui_lang_combo.addItem(name, code)
+        idx = self._ui_lang_combo.findData(saved_lang)
+        self._ui_lang_combo.setCurrentIndex(idx if idx >= 0 else 0)
         asr_layout.addWidget(QLabel(t("label_ui_lang")), 6, 0)
         asr_layout.addWidget(self._ui_lang_combo, 6, 1)
         self._ui_lang_combo.currentIndexChanged.connect(self._on_ui_lang_changed)
@@ -3844,7 +3846,7 @@ class ControlPanel(QWidget):
         self._current_settings["interim_interval"] = round(self._interim_interval_spin.value(), 2)
 
     def _on_ui_lang_changed(self, index):
-        lang = "en" if index == 0 else "zh"
+        lang = self._ui_lang_combo.itemData(index) or "en"
         self._current_settings["ui_lang"] = lang
         _save_settings(self._current_settings)
         from i18n import set_lang
@@ -3856,7 +3858,7 @@ class ControlPanel(QWidget):
             self,
             "LiveTranslate",
             "Language changed. Please restart the application.\n"
-            "语言已更改，请重启应用程序。",
+            "??????????????",
         )
 
     def _auto_save(self):
